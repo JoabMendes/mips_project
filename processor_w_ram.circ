@@ -580,7 +580,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="⨁"/>
     </comp>
     <comp lib="6" loc="(255,74)" name="Text">
-      <a name="text" val="DEST"/>
+      <a name="text" val="DEST (L1)"/>
       <a name="font" val="SansSerif bold 12"/>
     </comp>
     <comp loc="(430,250)" name="BCD8421"/>
@@ -632,6 +632,9 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="5" loc="(1040,290)" name="Button">
       <a name="facing" val="north"/>
       <a name="label" val="10"/>
+    </comp>
+    <comp lib="6" loc="(110,270)" name="Text">
+      <a name="text" val="(3B)+(3B)+(3B)+(3B)+(4B)"/>
     </comp>
     <comp lib="5" loc="(1000,210)" name="Button">
       <a name="facing" val="north"/>
@@ -705,7 +708,11 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="tristate" val="false"/>
     </comp>
     <comp lib="6" loc="(639,72)" name="Text">
-      <a name="text" val="R1"/>
+      <a name="text" val="R1(L1)"/>
+      <a name="font" val="SansSerif bold 12"/>
+    </comp>
+    <comp lib="6" loc="(69,203)" name="Text">
+      <a name="text" val="Instruction:"/>
       <a name="font" val="SansSerif bold 12"/>
     </comp>
     <comp lib="5" loc="(380,1060)" name="Hex Digit Display">
@@ -713,7 +720,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="bg" val="#ffffff"/>
     </comp>
     <comp lib="6" loc="(823,71)" name="Text">
-      <a name="text" val="R2"/>
+      <a name="text" val="R2(L1)"/>
       <a name="font" val="SansSerif bold 12"/>
     </comp>
     <comp lib="0" loc="(1220,650)" name="Clock">
@@ -722,7 +729,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="labelloc" val="north"/>
     </comp>
     <comp lib="6" loc="(1028,44)" name="Text">
-      <a name="text" val="NUMBER"/>
+      <a name="text" val="INPUT"/>
       <a name="font" val="SansSerif bold 12"/>
     </comp>
     <comp lib="5" loc="(1000,330)" name="Button">
@@ -762,6 +769,9 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="bg" val="#ffffff"/>
     </comp>
     <comp loc="(1020,1330)" name="DULLENTRY"/>
+    <comp lib="6" loc="(107,254)" name="Text">
+      <a name="text" val="DEST+OP+R1+R2+INPUT"/>
+    </comp>
     <comp lib="0" loc="(730,480)" name="Splitter">
       <a name="facing" val="south"/>
       <a name="fanout" val="4"/>
@@ -889,10 +899,16 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="facing" val="west"/>
       <a name="value" val="0x0"/>
     </comp>
+    <comp lib="6" loc="(49,231)" name="Text">
+      <a name="text" val="16bits"/>
+    </comp>
     <comp lib="5" loc="(180,580)" name="Button"/>
     <comp lib="0" loc="(1080,1330)" name="Splitter">
       <a name="fanout" val="4"/>
       <a name="incoming" val="4"/>
+    </comp>
+    <comp lib="6" loc="(101,345)" name="Text">
+      <a name="text" val="001 110 000 000 0011"/>
     </comp>
     <comp lib="0" loc="(1100,160)" name="Splitter">
       <a name="facing" val="north"/>
@@ -969,6 +985,9 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="facing" val="west"/>
       <a name="value" val="0x0"/>
     </comp>
+    <comp lib="6" loc="(105,371)" name="Text">
+      <a name="text" val="010 100 000 001 0000 "/>
+    </comp>
     <comp lib="5" loc="(380,1120)" name="Hex Digit Display">
       <a name="color" val="#281df0"/>
       <a name="bg" val="#ffffff"/>
@@ -998,6 +1017,13 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="5" loc="(490,130)" name="Button">
       <a name="facing" val="south"/>
       <a name="label" val="-&gt;"/>
+    </comp>
+    <comp lib="6" loc="(56,294)" name="Text">
+      <a name="text" val="Example:"/>
+      <a name="font" val="SansSerif bold 12"/>
+    </comp>
+    <comp lib="6" loc="(103,321)" name="Text">
+      <a name="text" val="000 110 000 000 0101"/>
     </comp>
     <comp loc="(320,930)" name="L1:32b"/>
     <comp lib="0" loc="(340,1250)" name="Splitter">
@@ -6190,7 +6216,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="0" loc="(310,290)" name="Pin">
       <a name="facing" val="south"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="INS"/>
+      <a name="label" val="OP"/>
     </comp>
     <comp loc="(560,2730)" name="L2:RG16PLUG"/>
     <comp lib="0" loc="(850,3950)" name="Pin">
@@ -6248,7 +6274,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="0" loc="(290,290)" name="Pin">
       <a name="facing" val="south"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="INS"/>
+      <a name="label" val="OP"/>
     </comp>
     <comp lib="0" loc="(720,3930)" name="Pin">
       <a name="facing" val="north"/>
@@ -6439,7 +6465,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="0" loc="(270,290)" name="Pin">
       <a name="facing" val="south"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="INS"/>
+      <a name="label" val="OP"/>
     </comp>
     <comp lib="0" loc="(340,3220)" name="Pin">
       <a name="tristate" val="false"/>
