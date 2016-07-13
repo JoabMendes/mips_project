@@ -1,10 +1,11 @@
-#Processador MIPS
+# Processador MIPS
 
 ## Características
 
 - 4 bits de Dados (0-15)
 - Capaz de receber um conjunto de instruções (256Bits)
 - ULA com 8 Operações:
+
   - AND
   - OR
   - NAND
@@ -13,6 +14,7 @@
   - SUB
   - ATT (Atribuição)
   - SLT
+
 - Apenas Inteiros
 - Clear e Clock integrados
 - Componentes: ULA + UNIDADE DE CONTROLE + REGISTRADORES (L1|L2)
@@ -21,13 +23,11 @@
 
 Neste exemplo será executado a soma de dois números pelo Processador
 
-A instrunções do processador são de 16Bits onde um conjunto de 16 instruções podem ser elaboradas em conjunto.
-Um instrução possui a seguinte estrutura:
+A instrunções do processador são de 16Bits onde um conjunto de 16 instruções podem ser elaboradas em conjunto. Um instrução possui a seguinte estrutura:
 
 DEST+OPERATION+R1+R2+INPUT
 
 3B + 3B + 3B + 3B + 4B
-
 
 Assembly:
 
@@ -45,18 +45,16 @@ Instruções em Binário:
 010 100 000 001 0000
 ```
 
-
 ### Passo a passo:
 
 1 - No circuito principal identifique os teclados de entrada
 
-
 2 - Insira a primeira instrução:
 
- - Selecione 0 para selecionar DEST (L1)
- - Selecione -> para escolher a função de atribuição
- - Selecione 0 nos dois R1 e R2 (opcional)
- - Selecione o número de entrada (4)
+- Selecione 0 para selecionar DEST (L1)
+- Selecione -> para escolher a função de atribuição
+- Selecione 0 nos dois R1 e R2 (opcional)
+- Selecione o número de entrada (4)
 
 3 - Salve a instrução em L2 em 0
 
